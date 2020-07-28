@@ -17,11 +17,7 @@ class Counter  extends Component {
   decrement = ()=>{
     if(this.state.count >0){
     this.setState({
-      
-        count: this.state.count-1
-      
-
-      
+        count: this.state.count-1      
     })
   }
   }
@@ -30,6 +26,12 @@ class Counter  extends Component {
       count: this.state.count=0
     })
   }
+  toggleDouble = ()=>{
+
+  }
+
+
+
   render(){
     return(
       <div>
@@ -39,6 +41,7 @@ class Counter  extends Component {
           <button type="button" onClick={this.increment}>Increment</button>
           <button type="button" onClick={this.decrement}>Decrement</button>
           <button type="button" onClick={this.reset}>Reset Count</button>
+          <button type="button" onClick={this.toggleDouble}>Double</button>
         </div>
       </div>
     )
