@@ -8,16 +8,22 @@ class Counter  extends Component {
     }
   }
   increment = ()=>{
+    if(this.state.count <10){
     this.setState({
       count: this.state.count+1
     })
-    
+  }
   }
   decrement = ()=>{
+    if(this.state.count >0){
     this.setState({
-      count: this.state.count-1
+      
+        count: this.state.count-1
+      
+
+      
     })
-    
+  }
   }
   reset = ()=>{
     this.setState({
